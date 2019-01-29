@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 // Import des models (a voir après ;) ) 
 use App\Model\App_users;
 use App\Model\Quizzes;
+use App\Utils\UserSession;
 
 class UserController extends Controller {
 
@@ -43,7 +44,7 @@ class UserController extends Controller {
             if(empty($errorList)){
                 //je verifie grace a mon email si mon utilisateur a deja un email existant dans ma BDD
                 //si tel est le cas , alors je ne PEUX m'authentifier 
-                $user = User::where('email', '=', $email)->first();
+                $user = App_users::where('email', '=', $email)->first();
                 //si je recupere un user => j'ai deja quelqu'un pour cet email
                 if($user){
                     //je compare grace a password verify si le mot de passe hashé en DB est equivalent a celui qui va etre hashé avec password verify.
@@ -106,12 +107,12 @@ class UserController extends Controller {
             if(empty($errorList)){
                 //je verifie grace a mon email si mon utilisateur a deja un email existant dans ma BDD
                 //si tel est le cas , alors je ne peux pas creer un nouvel utilisateur avec un email semblable
-                $user = User::where('email', '=', $email)->first();
+                $user = App_users::where('email', '=', $email)->first();
                 //si je recupere un user => j'ai deja quelqu'un pour cet email
                 if($user){
                     $errorList[] = 'Cet email existe déjà';
                 } else {
-                    $newUser = new User();
+                    $newUser = new App_users();
                     $newUser->email = $email;
                     //avant l'insertion en BDD , je hash mon mdp avec l'algorithme bcrypt prevu par defaut
                     $newUser->password = password_hash( $password, PASSWORD_DEFAULT);

@@ -1,5 +1,6 @@
 <?= view('layout/header') ?>
 
+<!-- J'affiche ma liste d'erreurs  -->
 <?php foreach($error_list as $error): ?>
 
 <div class="alert alert-danger" role="alert">
