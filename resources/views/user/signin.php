@@ -1,6 +1,14 @@
 <?= view('layout/header') ?>
 
-<form>
+<?php foreach($error_list as $error): ?>
+
+<div class="alert alert-danger" role="alert">
+    <?= $error ?>
+</div>
+
+<?php endforeach; ?>
+
+<form action="" method="POST" >
   <div class="form-group">
     <label for="email">Adresse email</label>
     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrez votre adresse email">
@@ -12,4 +20,5 @@
   <button type="submit" class="btn btn-primary">Se connecter</button>
 </form>
 
+<a href="<?= route('signup'); ?>"> Pas encore de compte ? c'est ici </a>
 <?= view('layout/footer') ?>

@@ -41,19 +41,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-blue" href="<?= route('signin'); ?>">
+                        <a class="nav-link text-blue" href="#">
                             <i class="fas fa-user"></i>
                             Mon compte
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-blue" href="<?= route('signup'); ?>">
+                        <a class="nav-link text-blue" href="<?= route('signin'); ?>">
                             <i class="fas fa-sign-in-alt"></i>
                             Sign In
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-blue" href="#">
+                        <a class="nav-link text-blue" href="<?= route('home'); ?>">
                             <i class="fas fa-sign-out-alt"></i>
                             Déconnexion
                         </a>
