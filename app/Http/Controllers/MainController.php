@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 // Import des models (a voir après ;) ) 
 use App\Model\App_users;
 use App\Model\Quizzes;
+use App\Utils\UserSession;
 
 
 class MainController extends Controller 

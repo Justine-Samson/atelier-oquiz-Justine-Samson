@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Reset CSS -->
-        <link href="../docs/html-css/css/reset.css"  rel="stylesheet">
+        <link href="<?= url('css/reset.css'); ?>" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,11 +19,13 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="../oquiz/public/css/app.css" rel="stylesheet">
+        <link href="<?= url('css/style.css'); ?>" rel="stylesheet">
 
         <title>O'Quiz</title>
     </head>
     <body>
+        
+        
         <main class="container">
             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
                 <ul class="nav mr-auto">

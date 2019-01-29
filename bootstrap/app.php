@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
+session_start();
 
 try {
     (new Dotenv\Dotenv(dirname(__DIR__)))->load();

@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\DB;
 use App\Model\Answers;
 use App\Model\Questions;
+use App\Utils\UserSession;
 
 echo view('layout/header'); ?>
 

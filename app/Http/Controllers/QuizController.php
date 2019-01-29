@@ -12,6 +12,7 @@ use App\Model\Quizzes;
 use App\Model\Questions;
 use App\Model\Answers;
 use App\Model\Levels;
+use App\Utils\UserSession;
 
 
 class QuizController extends Controller {

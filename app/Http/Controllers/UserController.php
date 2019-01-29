@@ -33,6 +33,8 @@ class UserController extends Controller {
             $email = trim($email);
             $password = trim($password);
             //VALIDATION
+            dump($email);
+            dump($password);
             if(
                 empty($email) || 
                 filter_var($email, FILTER_VALIDATE_EMAIL) === false ||
