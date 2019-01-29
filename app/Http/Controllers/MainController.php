@@ -59,4 +59,16 @@ class MainController extends Controller
             'app_users' => $app_users
         ]);
     }
+
+    public function profile() {
+        $email = UserSession::getUser()->email;
+        $firstname = UserSession::getUser()->firstname;
+        $lastname = UserSession::getUser()->lastname;
+
+        return view('user/profile', [
+            'email'=> $email,
+            'firstname'=> $firstname,
+            'lastname'=> $lastname,
+        ]);
+    }
 }

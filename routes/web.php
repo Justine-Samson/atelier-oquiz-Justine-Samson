@@ -57,3 +57,8 @@ $router->get('/logout', [
     'uses' => 'UserController@logout', 
     'as' => 'logout'
 ]);
+
+$router->get('/profile', [
+    'uses' => 'MainController@profile', 
+    'as' => 'profile'
+]);

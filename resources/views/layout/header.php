@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-blue" href="#">
+                        <a class="nav-link text-blue" href="<?= route('profile');?>">
                             <i class="fas fa-user"></i>
                             Mon compte
                         </a>
