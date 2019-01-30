@@ -18,45 +18,12 @@
                 <p> 
                     <?php
                        $author = $app_users->firstWhere('id', $currentQuiz->app_users_id);
-
-                       //une fois l'objet récupéré je peux comme je le faisais precedement acceder à la propriété souhaité ici le nom de ma platform
                        echo $author->firstname .' '.$author->lastname;
-                    
                     ?>
                 </p>
             </div>
         <?php endforeach ?>
-
-       <!--      <div class="col-sm-4">
-                <h3 class="text-blue">Titre 2</h3>
-                <h5>Sous titre</h5>
-                <p>by author name</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 class="text-blue">Titre 3</h3>
-                <h5>Sous titre</h5>
-                <p>by author name</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 class="text-blue">Titre 4</h3>
-                <h5>Sous titre</h5>
-                <p>by author name</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 class="text-blue">Titre 5</h3>
-                <h5>Sous titre</h5>
-                <p>by author name</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 class="text-blue">Titre 6</h3>
-                <h5>Sous titre</h5>
-                <p>by author name</p>
-            </div> -->
-            </div>
+        </div>
     </main>
 
 <?= view('layout/footer') ?>

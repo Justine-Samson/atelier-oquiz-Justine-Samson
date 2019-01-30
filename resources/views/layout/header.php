@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-blue" href="<?= route('home'); ?>">
+                        <a class="nav-link text-blue" href="<?= route('logout'); ?>">
                             <i class="fas fa-sign-out-alt"></i>
                             Déconnexion
                         </a>

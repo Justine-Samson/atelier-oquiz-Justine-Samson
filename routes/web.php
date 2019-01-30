@@ -11,12 +11,8 @@
 |
 */
 
-// $router->get('/', function () use ($router) {
-//     return $router->app->version();
-// });
 
 
-// A priori, on aurait 5 routes à créer dans un premier temps
 
 $router->get('/', [
     'uses' => 'MainController@home', 
@@ -58,7 +54,7 @@ $router->get('/logout', [
     'as' => 'logout'
 ]);
 
-$router->get('/profile', [
+$router->get('/account', [
     'uses' => 'MainController@profile', 
     'as' => 'profile'
 ]);

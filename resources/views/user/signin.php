@@ -1,6 +1,5 @@
 <?= view('layout/header') ?>
 
-<!-- J'affiche ma liste d'erreurs  -->
 <?php dump($error_list) ?>
 <?php if (!empty($error_list)) : ?>
  
